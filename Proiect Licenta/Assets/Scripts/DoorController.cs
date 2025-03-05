@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
+
+
 public class DoorController : MonoBehaviour
 
 {
@@ -41,8 +45,9 @@ public class DoorController : MonoBehaviour
         Vector3 currentRot = door.transform.localEulerAngles;
 
         if (opening)
+
         {
-            Debug.Log("is opening");
+
             if (currentRot.y < openRot)
 
             {
@@ -56,7 +61,7 @@ public class DoorController : MonoBehaviour
         else
 
         {
-            Debug.Log("is closing");
+
             if (currentRot.y > closeRot)
 
             {
@@ -96,4 +101,3 @@ public class DoorController : MonoBehaviour
     }
 
 }
-
