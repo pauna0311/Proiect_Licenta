@@ -41,9 +41,9 @@ public class PlayerMovement : MonoBehaviour
         MyInput();
         SpeedControl();
         if(grounded)
-            rb.drag = groundDrag;
+            rb.linearDamping = groundDrag;
         else
-            rb.drag = 0;
+            rb.linearDamping = 0;
     }
 
     private void FixedUpdate(){
@@ -56,11 +56,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void SpeedControl() {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
         if (flatVel.magnitude > moveSpeed) {
             Vector3 limitedVelocity = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVelocity.x, rb.velocity.y, limitedVelocity.z);
+            rb.linearVelocity = new Vector3(limitedVelocity.x, rb.linearVelocity.y, limitedVelocity.z);
         }
 
     }
