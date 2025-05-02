@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: a90d7b9b717fd67488b54ebf8d7aa12f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 293702
+  packageName: UHFPS - Ultimate Horror FPS KIT (HDRP)
+  packageVersion: 1.4
+  assetPath: Assets/ThunderWire Studio/UHFPS/_Demo/Scenes/Raining/Lightmap/Lightmap-3_comp_dir.png
+  uploadId: 690861
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -115,10 +122,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 293702
-  packageName: UHFPS - Ultimate Horror FPS KIT (HDRP)
-  packageVersion: 1.4
-  assetPath: Assets/ThunderWire Studio/UHFPS/_Demo/Scenes/Raining/Lightmap/Lightmap-3_comp_dir.png
-  uploadId: 690861
